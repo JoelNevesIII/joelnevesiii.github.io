@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="./css/resetcss.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Neves-Fy</title>
+</head>
+<body>
+    <canvas id="tela" width="1366" height="625"></canvas>
+    <div class="container">
+        <div class= "player">
+            <h1 class="titulo">Neves-Fy</h1>
+            <img class="img" src="./img/Attack_on_Titan_Season_1.jpg" alt="">
+            <br>
+            <i onclick="voltar()" class="fas fa-step-backward fa-2x icone"></i>
+            <i onclick="diminuirVel()" class="fas fa-fast-backward fa-2x icone"></i>
+            <i id="play" onclick="play()" class="fas fa-play fa-2x icone"></i>
+            <i onclick="aumentarVel()" class="fas fa-fast-forward fa-2x icone"></i>
+            <i onclick="avacar()" class="fas fa-step-forward fa-2x icone"></i>
+
+            <audio hidden id="audio" src="./music/Shingeki No Kyojin.mp3" controls></audio>
+        </div>
+        
+    </div>
+    <script src="./js/scriptMusic.js"></script>
+    <script src="./js/scriptAnimacao.js"></script>
+</body>
+</html>
